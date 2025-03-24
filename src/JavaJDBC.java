@@ -6,7 +6,7 @@ public class JavaJDBC {
         try {
             // No need for Class.forName() in Java 11+
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/zomato_db", "root", "Tarak@2024"
+                    "jdbc:mysql://localhost:3306/zomato_db", "root", "XXXXX"
             );
 
             if (connection != null) {
