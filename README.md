@@ -38,6 +38,28 @@ If configured correctly, it will establish a connection to the database.
 
 ---
 
+## **Database Setup**
+Before running the project, ensure that the required database and table exist in MySQL. Use the following commands to set up the database:
+
+```sql
+CREATE DATABASE IF NOT EXISTS zomato_db;
+USE zomato_db;
+```
+
+The project expects a table named `dinning` with appropriate columns. You can create it using the following SQL command in MySQL:
+
+```sql
+CREATE TABLE IF NOT EXISTS dinning (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    cuisine VARCHAR(100) NOT NULL
+);
+```
+
+Make sure to execute this command in your MySQL database before running the Java code.
+
+---
+
 ## Project Structure
 ```
 📦 JavaJDBC-Project
@@ -108,6 +130,3 @@ con.close();
 
 ## Conclusion
 This project provides an understanding of JDBC and demonstrates how to perform database operations in Java. 
-
-Happy Coding! 🚀
-
