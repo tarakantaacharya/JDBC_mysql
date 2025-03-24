@@ -9,7 +9,7 @@ public class CreateTable {
             Connection connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/zomato_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                 "root",
-                "Tarak@2024"
+                "XXXXX" //here keep you password
             );
 
             Statement statement = connection.createStatement();
