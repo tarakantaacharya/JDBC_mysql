@@ -9,7 +9,7 @@ public class UpdateData {
             Connection connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/zomato_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                 "root",
-                "Tarak@2024"
+                "XXXXXX"
             );
 
             Statement statement = connection.createStatement();
